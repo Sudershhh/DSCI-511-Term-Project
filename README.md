@@ -3,7 +3,7 @@
 
 ## Team Members
 - Sri Sudersan Thopey Ganesh
-- Risabh Sharma
+- Rishabh Sharma
 - Jeromey Abraham
 - Ridhan Srikumar
 
@@ -90,7 +90,7 @@ Once we obtain all the 4 dataframes, namely, Crime, Weather, Stock and Holiday, 
 - Sri Sudersan extracted information pertaining to weather from weather API. The responses obtained were substantial and huge. Out of all the parameters obtained, Temperature, Avg Temperature, Max Temperature, Avg Humidity, Precipitation, Condition, Sunrise, Sunset, Moonrise, Moonset, Moonphase were extracted.
 - Jeromey collected data for the crime incidents everyday for 2 weeks and converted all to CSV files and merged it together and dropped the redundant entries and cleaning the dataset by discarding certain columns like hour, cartid, objectid, point_x, point_y
 - Ridhan collected data from the Twelve data api for stock market and Holiday information from the holiday API. Ridhan created 2 dataframes for stock market and holiday to store the unique information. 
-- Rishab scraped data from True Crime Daily website and Twitter API. 
+- Rishabh scraped data from True Crime Daily website and Twitter API. Using the twitter and true crime daily we collected data with varied text data along with the date and time of the crime. This dataset can be used individually for the future use. 
 
 
 ### Expansion of this project
