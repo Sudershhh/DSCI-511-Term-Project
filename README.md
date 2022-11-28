@@ -61,6 +61,11 @@ Once we obtain all the 4 dataframes, namely, Crime, Weather, Stock and Holiday, 
 ![Final - 1](https://user-images.githubusercontent.com/59435391/204217489-7a50c35e-d8e9-47e4-93da-d3709a58630d.jpeg)
 
 
+
+![Final - 1 5](https://user-images.githubusercontent.com/59435391/204219191-1eb095ae-5e1e-48b1-be9a-db94238975e8.PNG)
+
+
+
 ![Final - 2](https://user-images.githubusercontent.com/59435391/204217503-db6b9f3c-d1c0-4828-a04d-662cd597a1a9.jpeg)
 
 
