@@ -1,4 +1,5 @@
 # DSCI 511-Term Project
+# Crime, Environmental Factors and demographics
 
 ## Team Members
 - Sri Sudersan Thopey Ganesh
@@ -71,8 +72,19 @@ Once we obtain all the 4 dataframes, namely, Crime, Weather, Stock and Holiday, 
 #### Challenges Faced by the Team & API Limitations
 
 - Initially, The dataset we created was quite large with over 2 Million rows of data. It took some time to figure out the necessary columns and delete the unrecognized data. 
-- The Weather API we have is a  Pro Plus plan with 14 day trial version that allows us to request 5 Million calls per month. Subscription to the API is quite expensive and we have to signup twice over the course of our project implementation to get it up and running,
+- The Weather API we have is a Pro Plus plan with 14 day trial version that allows us to request 5 Million calls per month. Subscription to the API is quite expensive and we have to signup twice over the course of our project implementation to get it up and running,
 - The Stock API provided by Twelve data is free for use however the system is based on API Credits. 1 API call costs 8 API Credits and we are allowed a maximum of 800 credits per day. Also, We can only call the API once in a minute.
 - For the Holidays API, we only get the 2021 holiday data and we can make 10000 requests per month. We had to programmatically get the response and change all the years to 2022 to fit in our dataset.
 
 
+#### Individual Contributions
+- Sri Sudersan extracted information pertaining to weather from weather API. The responses obtained were substantial and huge. Out of all the parameters obtained, Temperature, Avg Temperature, Max Temperature, Avg Humidity, Precipitation, Condition, Sunrise, Sunset, Moonrise, Moonset, Moonphase were extracted.
+- Jeromey collected data for the crime incidents everyday for 2 weeks and converted all to CSV files and merged it together and dropped the redundant entries and cleaning the dataset by discarding certain columns like hour, cartid, objectid, point_x, point_y
+- Ridhan collected data from the Twelve data api for stock market and Holiday information from the holiday API. Ridhan created 2 dataframes for stock market and holiday to store the unique information. 
+- Rishab scraped data from True Crime Daily website and Twitter API. 
+
+
+#### Expansion of this project
+- The way we would like to expand this project is by gathering data from other crime-ridden cities.
+- We could use this dataset available to other data analysts who are interested in Crime and how it is affected by the environment.
+- By doing this, we will be able to get insights from the dataset and also ways in which we could improve the project.
