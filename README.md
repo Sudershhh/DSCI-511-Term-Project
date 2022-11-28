@@ -25,9 +25,14 @@ With the timestamps in the data set, we can also predict the time of the years, 
 The core requisite for this dataset depends on the Open Data Philly API. The response gives us data starting from 1st January, 2022 till today's date. 
 The API was run for several times during the start of each week to get the latest data. 
 The major problem with the response was that it was dirty and raw and was not readable to the user and several columns were unnecessary.
-After iterating through the response as a list and cleaning the rows and dropping several columns, a cleaned dataset was obtained.
+After iterating through the response as a list and cleaning the rows and dropping several columns, a cleaned dataset was obtained and converted to a CSV File.
+
+### Sample Cleaned Crime Dataset
+
+![Cleaned Crime Data](https://drive.google.com/drive/folders/1hHx2tkHZvpnOW1wYPhpcv9GIFtM5KanD)
 
 
+The next part of this project is to collect data from the weather api. This API is a 14 day trial edition and gives us access to historical data. Since our dataset consists of over 280,000 rows; we cannot call the api for each date. So we just collect the unique dates the crime occured and store the 24h hourly weather details in a dictionary. After storing the details in a list, we can iterate over the crime dataset and obtain the weather data for that corresponding day and append it to weather dataFrame. After getting the weather dataframe and converting to a CSV file, we can merge the 2 datasets; crime and weather into one large dataset.
 
 
 
