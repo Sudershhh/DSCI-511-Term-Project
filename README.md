@@ -24,9 +24,13 @@ With the timestamps in the data set, we can also predict the time of the years, 
 
 #### CREATING CRIME DATASET
 The core requisite for this dataset depends on the Open Data Philly API. The response gives us data starting from 1st January, 2022 till today's date. 
-The API was run for several times during the start of each week to get the latest data. 
+The API was run at the end of each day to get the latest data. 
 The major problem with the response was that it was dirty and raw and was not readable to the user and several columns were unnecessary.
 After iterating through the response as a list and cleaning the rows and dropping several columns, a cleaned dataset was obtained and converted to a CSV File.
+
+#### RAW DATASET
+![Raw data](https://user-images.githubusercontent.com/59435391/204218311-69204ab5-501e-4850-8dbb-4fdbd6702667.jpeg)
+
 
 ### Sample Cleaned Crime Dataset
 
@@ -40,7 +44,24 @@ The next part of this project is to collect data from the weather api. This API 
 #### CREATING STOCK MARKET DATASET
 Twelve Data provides us stock market data and the api is flexible. We can provide the start, end dates, currency and exchanges. For our project, we are collecting data from 1st January, 2022. The information we are collecting are the daily Low, High, Open, Close, Volume stock prices.
 
+![Stock Photo](https://user-images.githubusercontent.com/59435391/204216359-dad6c174-8818-4fd0-a8f5-4206eb739439.PNG)
+
+
+
+
 #### CREATING HOLIDAY DATASET
-Holiday API provides us the list of holidays throughout the year globally. For our project, we just need the holidays specific to the United States.
+Holiday API provides us the list of holidays throughout the year globally. For our project, we just need the holidays specific to the United States. The response we are getting are Date, Holiday, Public Holiday or not.
+
+![Holiday](https://user-images.githubusercontent.com/59435391/204216867-822c05ab-2908-428c-b99e-2c8d6e54a665.PNG)
+
+#### FINAL MERGING AND MANIPULATION
+Once we obtain all the 4 dataframes, namely, Crime, Weather, Stock and Holiday, using pandas library, we can merge all the 4 dataframes using the append method into one big dataset and rename the columns into a readable format.
+
+#### FINAL SAMPLE DATASET
+![Final - 1](https://user-images.githubusercontent.com/59435391/204217489-7a50c35e-d8e9-47e4-93da-d3709a58630d.jpeg)
+
+
+![Final - 2](https://user-images.githubusercontent.com/59435391/204217503-db6b9f3c-d1c0-4828-a04d-662cd597a1a9.jpeg)
+
 
 
