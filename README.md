@@ -68,5 +68,11 @@ Once we obtain all the 4 dataframes, namely, Crime, Weather, Stock and Holiday, 
 
 ![Final - 2](https://user-images.githubusercontent.com/59435391/204217503-db6b9f3c-d1c0-4828-a04d-662cd597a1a9.jpeg)
 
+#### Challenges Faced by the Team & API Limitations
+
+- Initially, The dataset we created was quite large with over 2 Million rows of data. It took some time to figure out the necessary columns and delete the unrecognized data. 
+- The Weather API we have is a  Pro Plus plan with 14 day trial version that allows us to request 5 Million calls per month. Subscription to the API is quite expensive and we have to signup twice over the course of our project implementation to get it up and running,
+- The Stock API provided by Twelve data is free for use however the system is based on API Credits. 1 API call costs 8 API Credits and we are allowed a maximum of 800 credits per day. Also, We can only call the API once in a minute.
+- For the Holidays API, we only get the 2021 holiday data and we can make 10000 requests per month. We had to programmatically get the response and change all the years to 2022 to fit in our dataset.
 
 
