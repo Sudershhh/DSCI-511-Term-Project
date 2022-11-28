@@ -20,6 +20,7 @@ With the timestamps in the data set, we can also predict the time of the years, 
 - Weather API 
 - Twelve Data API - Stock Market
 - Holiday API
+- Twitter API
 
 ## Instructions to run the program
 
